@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор рыбного текста</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>Генератор рыбного текста</h1>
+<form id="fishTextForm">
+    <label for="textType">Тип текста:</label>
+    <select id="textType" name="type">
+        <option value="title">Заголовок</option>
+        <option value="text">Текст</option>
+    </select>
+    <button type="submit">Получить текст</button>
+</form>
+<div id="generatedText">
+    <h2>Сгенерированный текст:</h2>
+    <p id="outputText"></p>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

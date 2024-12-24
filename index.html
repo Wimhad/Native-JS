@@ -10,15 +10,16 @@
 <h1>Генератор рыбного текста</h1>
 <form id="fishTextForm">
     <label for="textType">Тип текста:</label>
-    <select id="textType" name="type">
+    <select id="textType" name="type" aria-label="Выберите тип текста">
         <option value="title">Заголовок</option>
         <option value="text">Текст</option>
     </select>
-    <button type="submit">Получить текст</button>
+    <button type="submit" aria-label="Получить сгенерированный текст">Получить текст</button>
 </form>
 <div id="generatedText">
     <h2>Сгенерированный текст:</h2>
     <p id="outputText"></p>
+    <button id="clearText" aria-label="Очистить сохранённый текст">Очистить текст</button>
 </div>
 <script src="./script.js"></script>
 </body>
